@@ -1,0 +1,415 @@
+body 
+{
+    font-family: 'League Spartan';
+    margin: 0;
+    padding: 0;
+    background-color: hsl(180, 52%, 96%)
+  }
+
+  .nav-bar img
+  {
+    height: 120px;
+    width: 100%;
+    background-color: hsl(180, 29%, 50%);
+
+  }
+
+  .filter-bar {
+    display: flex;
+    background-color: hsl(180, 100%, 99%);
+    padding: 30px;
+    margin-top: 40px;
+    width:60%;
+    height:200%;
+    margin-left: 18%;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+  }
+  .clear
+  {
+    background-color: hsl(180, 100%, 99%);
+    color: hsl(180, 2%, 19%);
+    border-radius: 5px;
+    padding: 9px 15px;
+    margin-left: auto;
+    text-decoration: underline;
+    cursor: pointer;
+    
+  }
+  .job-list
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 30px auto;
+  }
+
+  .item1 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 40px;
+    transition: transform 0.1s ease; 
+    box-shadow: 0 0 50px rgba(18, 18, 19, 0.1);
+    flex: 1 1 calc(33.3333% - 20px);
+  }
+
+  .item1:hover
+   {
+    transform: translateY(-9px); 
+}
+  .icon1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+  .box-green {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+
+  .box-black {
+    background-color: #131414;
+    color: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+  .info
+  {
+    flex:1;
+ 
+  }
+
+  .name1
+  {
+    margin-right: 10px;
+    margin-left: 20px;
+    color: hsl(180, 29%, 50%);
+    font-weight: 550;
+
+  }
+
+  .title1
+  {
+    margin-left: 20px;
+
+  }
+
+
+  .upper {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+
+  }
+
+  .lower {
+    font-size: 14px;
+    color: #777;
+    margin-top: 6px;
+    margin-left: 20px;
+  }
+
+  .lower2 
+  {
+    margin-left: 10px;
+  }
+  .lower3
+  {
+    margin-left: 10px;
+  }
+  .languages {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+  }
+
+  .lan-box,
+  .role,
+  .level {
+      background-color: hsl(180, 52%, 96%);
+      color: hsl(180, 29%, 50%);
+      border-radius: 5px;
+      padding: 3px 10px;
+      margin-right: 10px;
+      cursor: pointer; 
+
+      transition: background-color 0.1s ease, color 0.1s ease; /* Add transition for both background-color and color */
+  }
+  
+  .lan-box:hover,
+  .role:hover,
+  .level:hover {
+      background-color: hsl(180, 29%, 50%);
+      color: azure;
+  }
+ 
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+  }
+
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  .filter-item
+   {
+    display: flex;
+    align-items: center;
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+.cross-icon 
+{
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+a {
+  text-decoration: none; 
+  color: inherit; 
+  cursor: pointer; 
+}
+
+#model-container , #add-job-container
+{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(160, 152, 152, 0.5); 
+}
+
+ .modal1{
+  display: flex;
+  justify-content: center;
+
+}
+
+.modal 
+{
+  background-color: #bee7e2;
+  margin: 10% auto;
+  padding: 20px;
+  width: 120%;
+  height: 60%;
+  max-width: 600px;
+  position: relative;
+}
+
+.close-modal {
+  color: #3b3838;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#popup-content-container , #popup-content-container1 , #popup-content-container2
+{
+  margin-top: 50px;
+ 
+}
+
+.rounded-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #7ee8a7;
+  color: #393838;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 24px;
+  text-align: center;
+}
+
+#modal-form {
+  margin-top: 20px;
+width:20%;
+}
+
+#modal-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#modal-form input[type="text"] 
+{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+
+#addJobBtn 
+{
+  background-color: hsl(180, 52%, 96%);
+  color: rgb(25, 24, 24);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 40%;
+}
+
+#addJobBtn:hover 
+{
+  background-color: #ccdecd;
+}
+
+.add-job-container 
+{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; 
+
+}
+
+.modal1 
+{
+  background-color: rgb(204, 233, 238);
+  padding: 20px;
+  border-radius: 10px;
+  max-height: 80%; 
+  overflow-y: auto; 
+  margin:50px;
+}
+
+.close-modal1 
+{
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  position: fixed;
+  top:65px;
+  right:90px;
+
+}
+
+.close-modal1:hover 
+{
+  color: #333;
+}
+
+.deleteIcon {
+  cursor: pointer;
+  font-size: 18px;
+  color: rgb(63, 61, 61);
+  position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 100px;
+}
+
+.deleteIcon:hover
+ {
+  color: rgb(97, 100, 102);
+}
+
+@media only screen and (max-width: 400px) and (min-width: 373px) 
+ {
+  .nav-bar img {
+      width:200%;
+  }
+
+  .filter-bar {
+      padding: 15px;
+      width: 130%;
+      margin-left:30%;
+  }
+
+  .info
+  {
+    margin-right: 30px;
+  }
+
+  .item1
+  {
+    margin-left: 30%;
+  }
+
+  .languages, .lan-box, .role, .level {
+      font-size: 12px;
+  }
+ 
+  .languages
+  {
+    flex-direction: column;
+    margin: 5px;
+  }
+
+  .modal {
+      width: 80%;
+      margin: 10% auto;
+  }
+
+  .modal1 {
+      margin: 20px;
+      max-height: 70%;
+      overflow-y: auto;
+  }
+
+  #add-job-container {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+
+  .rounded-button {
+      bottom: 10px;
+      right: 10px;
+      font-size: 18px;
+      padding: 8px 16px;
+  }
+
+
+
+}

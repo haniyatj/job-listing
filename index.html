@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Job Listing</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="data.json"></script>
+  <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+
+
+</head>
+<body>
+  
+  <!-- nav bar div with image -->
+  <nav class="nav-bar">  <img src="./images/bg-header-desktop.svg"> 
+  </nav>
+
+  <!-- filter bar div with clear btn -->
+
+  <div class="filter-bar" id="filter-bar">
+    <div class="clear">Clear</div>
+  </div> 
+
+  <!-- joblist having item1 -->
+  <div class="job-list" id="job-listing">
+  </div>
+
+<!-- pop up shows up when clicked on title -->
+<div id="model-container" class="modal-container">
+  <div class="modal">
+    <span class="close-modal">&times;</span>
+    <p id="popup-content-container"></p>
+    <p id="popup-content-container1"></p>
+    <p id="popup-content-container2"></p>
+  </div> 
+  </div>
+
+  <!-- form -->
+
+  <div id="add-job-container" class="add-job-container">
+    <span class="close-modal1">&times;</span>
+    <div class="modal1">
+      <div id="modal-form"> 
+        <label for="company">Company:</label>
+        <input type="text" id="company" required><br>
+  
+        <label for="logo">Logo URL:</label>
+        <input type="url" id="logo" required><br>
+
+        <label for="new">new:</label>
+        <input type="checkbox" id="new" >
+        
+        <label for="featured">featured:</label>
+        <input type="checkbox" id="featured" ><br>
+
+        <label for="position">position:</label>
+        <input type="text" id="position" required><br>
+
+        <label for="level">Level:</label>
+        <input type="text" id="level" required><br>
+
+        <label for="role">role:</label>
+        <input type="text" id="role" required><br>
+
+        <label for="postedat">Posted at:</label>
+        <input type="text" id="postedat" required><br>
+
+        <label for="contract">Contract:</label>
+        <input type="contract" id="contract" required><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" required><br>
+
+        <label for="languages">languages (comma-separated):</label>
+        <input type="text" id="languages" required><br>
+
+        <label for="tools">Tools(comma-separated):</label>
+        <input type="text" id="tools" required><br>
+
+      <button id="addJobBtn">Add</button>
+    </div>  
+  </div>
+  </div>
+
+  <!-- green btn -->
+<div id="overlay">
+  <button  class="rounded-button">+</button>
+</div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Haniya Tariq</a>.
+  </div> -->
+
+  <script src="java.js"></script>
+
+</body>
+</html>
